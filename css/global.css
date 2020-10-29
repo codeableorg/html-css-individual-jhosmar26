@@ -52,12 +52,13 @@ body{
 
 .card .animation{
   position: relative;
+  overflow: hidden;
+  margin-bottom: 8px;
 }
 
-.card img{
+.card .video{
   width: 100%;
   display: block;
-  margin-bottom: 8px;
   transition: .3s;
 }
 
@@ -67,7 +68,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #1B1C20;
+  background-color: #1b1c205c;
   opacity: 0;
   transition: .4s;
   display: flex;
@@ -79,8 +80,8 @@ body{
   width: 20%;
   height: 24%;
   position: absolute;
-  margin: 0;
   transform: translate(0, 40px);
+  transition: .3s;
 }
 
 .card-description{
@@ -107,4 +108,8 @@ body{
 
 .card .animation:hover .play{
   transform: translate(0,0);
+}
+
+.card .animation:hover .video{
+  transform: scale(1.08);
 }
