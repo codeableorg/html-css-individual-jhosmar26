@@ -21,9 +21,45 @@ body{
   margin: auto;
 }
 
+.grid-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(206px , 1fr));
+  gap: 10px;
+}
+
 .image-title{
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
 }
 
+.grid-gallery{
+  margin: 40px 0;
+}
+
+.card{
+  max-width: 360px;
+  width: 100%;
+}
+
+.card img{
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-description{
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #1B1C20;
+  margin: 5px 0;
+}
+
+.card-rating{
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+}
